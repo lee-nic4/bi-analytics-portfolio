@@ -19,42 +19,98 @@
     </nav>
   </header>
 
-  <main class="content">
-    <section class="intro">
-      <h1>Business Intelligence Portfolio</h1>
-      <p>
-        Turning complex data into clear, 
-        executive-ready insights.
+  <section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-greeting">Hello, my name is</p>
+      <h1 class="hero-name">Leanna Nicholas</h1>
+      <p class="hero-tagline">
+        Turning complex data into clear, executive-ready insights.
       </p>
-    </section>
+    </div>
 
-    <section id="projects">
-      <h2>Selected Projects</h2>
+    <div class="hero-image">
+      <img src="images/hero.jpg" alt="Modern workspace with laptop" />
+    </div>
+  </div>
+</section>
 
-      <div class="project-card">
-        <h3>Executive Sales Dashboard</h3>
-        <p>
-          Power BI dashboard analyzing revenue, margin, and regional performance.
-          Designed for executive review.
+  <section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- Project with two images -->
+    <div class="project-card wide">
+      <div class="project-images">
+        <img src="images/project1a.png" alt="Dashboard overview" />
+        <img src="images/project1b.png" alt="Drill-down view" />
+      </div>
+
+      <div class="project-info">
+        <h3>Cyclistic NYC Boke Rides</h3>
+        <p class="project-summary">
+          Power BI dashboard designed for executive leadership to track revenue,
+          margin, and regional performance.
         </p>
-        <p class="tech">Power BI · SQL · DAX</p>
+
+        <details>
+          <summary>Project context</summary>
+          <ul>
+            <li><strong>Stakeholder:</strong> Executive leadership team</li>
+            <li><strong>Need:</strong> High-level performance with ability to drill down</li>
+            <li><strong>Approach:</strong> Defined KPIs, simplified layout, consistent filters</li>
+            <li><strong>Outcome:</strong> Faster review cycles and clearer performance signals</li>
+          </ul>
+        </details>
+
         <a href="https://github.com/yourusername/project-repo" target="_blank">
           View on GitHub
         </a>
       </div>
+    </div>
 
-      <div class="project-card">
-        <h3>Customer Retention Analysis</h3>
-        <p>
-          Cohort and churn analysis with clear KPI definitions and business context.
-        </p>
-        <p class="tech">Python · Pandas · Tableau</p>
-        <a href="https://github.com/yourusername/project-repo" target="_blank">
-          View on GitHub
-        </a>
-      </div>
+    <!-- Standard project -->
+    <div class="project-card">
+      <h3>Greece AirBnB Rentals</h3>
+      <p class="project-summary">
+        Cohort-based analysis identifying churn drivers and retention patterns.
+      </p>
 
-    </section>
+      <details>
+        <summary>Project context</summary>
+        <ul>
+          <li><strong>Stakeholder:</strong> Product & Marketing</li>
+          <li><strong>Need:</strong> Understand churn timing and causes</li>
+          <li><strong>Approach:</strong> Cohorts, retention curves, segmentation</li>
+        </ul>
+      </details>
+
+      <a href="#">View on GitHub</a>
+    </div>
+
+        <!-- Standard project -->
+    <div class="project-card">
+      <h3>Minnesota Department of Transporation</h3>
+      <p class="project-summary">
+        Cohort-based analysis identifying churn drivers and retention patterns.
+      </p>
+
+      <details>
+        <summary>Project context</summary>
+        <ul>
+          <li><strong>Stakeholder:</strong> Product & Marketing</li>
+          <li><strong>Need:</strong> Understand churn timing and causes</li>
+          <li><strong>Approach:</strong> Cohorts, retention curves, segmentation</li>
+        </ul>
+      </details>
+
+      <a href="#">View on GitHub</a>
+    </div>
+    
+  </div>
+</section>
+
 
     <section id="about">
       <h2>About</h2>
@@ -63,20 +119,17 @@
       </p>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        <a href="https://www.linkedin.com/in/leanna-nicholas" target="_blank">LinkedIn</a>
-        ·
-        <a href="https://github.com/lee-nic4" target="_blank">GitHub</a>
-        ·
-        <a href="mailto:NICHL2@yahoo.com">Email</a>
-      </p>
-    </section>
-  </main>
+  <footer class="site-footer" id="contact">
+  <div class="footer-content">
+    <span>© 2026 Leanna Nicholas</span>
 
-  <footer class="site-footer">
-    <p>© 2026 Leanna Nicholas</p>
-  </footer>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/leanna-nicholas" aria-label="LinkedIn">🔗</a>
+      <a href="https://github.com/lee-nic4" aria-label="GitHub">💻</a>
+      <a href="mailto:NICHL2@yahoo.com" aria-label="Email">✉️</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
