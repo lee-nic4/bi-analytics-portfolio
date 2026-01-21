@@ -1,135 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Leanna Nicholas | Business Intelligence Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Full Name | BI Portfolio</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="site-header">
-    <nav class="nav-container">
-      <span class="logo">Leanna Nicholas</span>
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-      <p class="hero-greeting">Hello, my name is</p>
-      <h1 class="hero-name">Leanna Nicholas</h1>
-      <p class="hero-tagline">
-        Turning complex data into clear, executive-ready insights.
-      </p>
-    </div>
+<!-- ========== STICKY HEADER ========== -->
+<header class="sticky-header">
+  <div class="header-left">
+    <h1>Leanna Nicholas</h1>
+  </div>
+  <nav class="header-nav">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="header-icons">
+    <a href="https://linkedin.com/in/leanna-nicholas" target="_blank">LinkedIn</a>
+    <a href="https://github.com/lee-nic4" target="_blank">GitHub</a>
+    <a href="mailto:NICHL2@yahoo.com">Email</a>
+  </div>
+</header>
 
-    <div class="hero-image">
-      <img src="images/hero.jpg" alt="Modern workspace with laptop" />
-    </div>
+<!-- ========== INTRO SECTION ========== -->
+<section id="intro" class="intro-section">
+  <div class="intro-text">
+    <p>Hi, I'm</p>
+    <h2>Leanna Nicholas</h2>
+    <h3>Business Intelligence Analyst</h3>
+    <p class="tagline">Translating complex data into clear, executive-ready insights</p>
+  </div>
+  <div class="intro-img">
+    <img src="your-image.jpg" alt="Professional photo">
   </div>
 </section>
 
-  <section id="projects">
-  <h2>Projects</h2>
+<!-- ========== PROJECTS SECTION ========== -->
+<section id="projects" class="projects-section">
+  <h2>Data Dashboards & BI Projects</h2>
 
-  <div class="projects-grid">
-
-    <!-- Project with two images -->
-    <div class="project-card wide">
-      <div class="project-images">
-        <img src="images/project1a.png" alt="Dashboard overview" />
-        <img src="images/project1b.png" alt="Drill-down view" />
-      </div>
-
-      <div class="project-info">
-        <h3>Cyclistic NYC Boke Rides</h3>
-        <p class="project-summary">
-          Power BI dashboard designed for executive leadership to track revenue,
-          margin, and regional performance.
-        </p>
-
-        <details>
-          <summary>Project context</summary>
-          <ul>
-            <li><strong>Stakeholder:</strong> Executive leadership team</li>
-            <li><strong>Need:</strong> High-level performance with ability to drill down</li>
-            <li><strong>Approach:</strong> Defined KPIs, simplified layout, consistent filters</li>
-            <li><strong>Outcome:</strong> Faster review cycles and clearer performance signals</li>
-          </ul>
-        </details>
-
-        <a href="https://github.com/yourusername/project-repo" target="_blank">
-          View on GitHub
-        </a>
-      </div>
+  <!-- PROJECT 1 -->
+  <div class="project-card">
+    <div class="carousel" data-project="1">
+      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard1" target="_blank"><img src="proj1-img1.jpg" alt="Project 1 image"></a></div>
+      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard1" target="_blank"><img src="proj1-img2.jpg" alt="Project 1 image"></a></div>
+      <button class="prev" onclick="moveSlide(1, -1)">❮</button>
+      <button class="next" onclick="moveSlide(1, 1)">❯</button>
     </div>
-
-    <!-- Standard project -->
-    <div class="project-card">
-      <h3>Greece AirBnB Rentals</h3>
-      <p class="project-summary">
-        Cohort-based analysis identifying churn drivers and retention patterns.
-      </p>
-
-      <details>
-        <summary>Project context</summary>
-        <ul>
-          <li><strong>Stakeholder:</strong> Product & Marketing</li>
-          <li><strong>Need:</strong> Understand churn timing and causes</li>
-          <li><strong>Approach:</strong> Cohorts, retention curves, segmentation</li>
-        </ul>
-      </details>
-
-      <a href="#">View on GitHub</a>
+    <button class="collapsible">Details</button>
+    <div class="content">
+      <p><strong>Overview:</strong> Brief intro...</p>
+      <p><strong>Stakeholder Need:</strong> Describe need...</p>
+      <p><strong>Approach:</strong> Explain tools & method...</p>
+      <p><strong>Impact:</strong> What changed?</p>
+      <p class="tools"><span class="badge">Tableau</span><span class="badge">Insights</span></p>
     </div>
-
-        <!-- Standard project -->
-    <div class="project-card">
-      <h3>Minnesota Department of Transporation</h3>
-      <p class="project-summary">
-        Cohort-based analysis identifying churn drivers and retention patterns.
-      </p>
-
-      <details>
-        <summary>Project context</summary>
-        <ul>
-          <li><strong>Stakeholder:</strong> Product & Marketing</li>
-          <li><strong>Need:</strong> Understand churn timing and causes</li>
-          <li><strong>Approach:</strong> Cohorts, retention curves, segmentation</li>
-        </ul>
-      </details>
-
-      <a href="#">View on GitHub</a>
-    </div>
-    
   </div>
+
+  <!-- PROJECT 2 -->
+  <div class="project-card">
+    <div class="carousel" data-project="2">
+      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard2" target="_blank"><img src="proj2-img1.jpg" alt="Project 2 image"></a></div>
+      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard2" target="_blank"><img src="proj2-img2.jpg" alt="Project 2 image"></a></div>
+      <button class="prev" onclick="moveSlide(2, -1)">❮</button>
+      <button class="next" onclick="moveSlide(2, 1)">❯</button>
+    </div>
+    <button class="collapsible">Details</button>
+    <div class="content">
+      <p>Project summary...</p>
+      <p class="tools"><span class="badge">Tableau</span><span class="badge">SQL</span><span class="badge">Insights</span></p>
+    </div>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="project-card">
+    <div class="carousel" data-project="3">
+      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard3" target="_blank"><img src="proj3-img1.jpg" alt="Project 3 image"></a></div>
+      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard3" target="_blank"><img src="proj3-img2.jpg" alt="Project 3 image"></a></div>
+      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard3" target="_blank"><img src="proj3-img3.jpg" alt="Project 3 image"></a></div>
+      <button class="prev" onclick="moveSlide(3, -1)">❮</button>
+      <button class="next" onclick="moveSlide(3, 1)">❯</button>
+    </div>
+    <button class="collapsible">Details</button>
+    <div class="content">
+      <p>Project summary...</p>
+      <p class="tools"><span class="badge">Tableau</span><span class="badge">SQL</span><span class="badge">Insights</span></p>
+    </div>
+  </div>
+
 </section>
 
+<!-- ========== ABOUT / BIO SECTION ========== -->
+<section id="about" class="about-section">
+  <h2>About Me</h2>
+  <p>Business Intelligence professional with 15+ years of experience in financial services, operations, and analytics. Recently completed the Google Business Intelligence Certificate, with hands-on experience building dashboards, KPI scorecards, and executive reporting. Known for structured thinking, process optimization, and translating complex data into clear insights for decision-makers. Actively pursuing BI/BA roles in globally distributed environments.</p>
+  <h3>Skills & Tools</h3>
+  <ul class="skills-list">
+    <li>Tableau</li>
+    <li>Power BI</li>
+    <li>SQL</li>
+    <li>Excel & Power Query</li>
+    <li>KPI Framework Design</li>
+    <li>Executive Reporting</li>
+  </ul>
+</section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        Business Intelligence professional with 15+ years of experience in financial services, operations, and analytics. Recently completed the Google Business Intelligence Certificate, with hands-on experience building dashboards, KPI scorecards, and executive reporting. Known for structured thinking, process optimization, and translating complex data into clear insights for decision-makers. Actively pursuing BI/BA roles in globally distributed environments.
-      </p>
-    </section>
-
-  <footer class="site-footer" id="contact">
-  <div class="footer-content">
-    <span>© 2026 Leanna Nicholas</span>
-
-    <div class="footer-links">
-      <a href="https://linkedin.com/in/leanna-nicholas" aria-label="LinkedIn">🔗</a>
-      <a href="https://github.com/lee-nic4" aria-label="GitHub">💻</a>
-      <a href="mailto:NICHL2@yahoo.com" aria-label="Email">✉️</a>
-    </div>
+<!-- ========== CONTACT / FOOTER ========== -->
+<footer id="contact" class="footer-section">
+  <p>© 2026 Leanna Nicholas — BI Portfolio</p>
+  <div class="footer-icons">
+    <a href="https://linkedin.com/in/leanna-nicholas" target="_blank">LinkedIn</a>
+    <a href="https://github.com/lee-nic4" target="_blank">GitHub</a>
+    <a href="mailto:NICHL2@yahoo.com">Email</a>
   </div>
 </footer>
 
+<script src="scripts.js"></script>
 </body>
 </html>
