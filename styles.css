@@ -1,177 +1,207 @@
-/* GLOBAL RESET */
+/* GLOBAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* COLORS */
 :root {
   --header-bg: #738D93;
   --body-bg: #F8F4E3;
   --text-main: #7D8A8F;
-  --accent: #609EA8; /* muted teal */
+  --accent: #609EA8;
   --text-light: #FFFFFF;
 }
 
-/* BASE STYLES */
 body {
   font-family: Arial, sans-serif;
   background: var(--body-bg);
   color: var(--text-main);
-  scroll-behavior: smooth;
-}
-a {
-  text-decoration: none;
-  color: var(--accent);
+  line-height: 1.6;
 }
 
-/* STICKY HEADER */
+/* ========== HEADER ========== */
 .sticky-header {
   position: sticky;
   top: 0;
-  width: 100%;
   background: var(--header-bg);
   color: var(--text-light);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 1.2rem;
   z-index: 100;
 }
+
 .sticky-header h1 {
   font-size: 1.5rem;
 }
+
 .header-nav a {
   margin: 0 1rem;
   color: var(--text-light);
+  font-weight: bold;
 }
+
 .header-icons a {
-  margin: 0 0.5rem;
-  font-size: 1.1rem;
+  margin: 0 0.6rem;
+  font-size: 1.3rem;
   color: var(--text-light);
 }
 
-/* INTRO SECTION */
+/* ========== INTRO ========== */
 .intro-section {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   background: var(--header-bg);
   color: var(--text-light);
-  padding: 3rem 2rem;
+  padding: 2.8rem 2rem;
   flex-wrap: wrap;
 }
+
+.intro-text {
+  max-width: 600px;
+}
+
 .intro-text p {
   font-size: 1.2rem;
 }
+
 .intro-text h2 {
   font-size: 3rem;
   font-weight: bold;
   margin: 0.3rem 0;
 }
+
 .intro-text h3 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
-.intro-img img {
+
+.intro-image img {
   max-width: 60%;
   border-radius: 8px;
 }
 
-/* PROJECTS SECTION */
+/* ========== PROJECTS ========== */
 .projects-section {
-  padding: 2rem;
-}
-.projects-section h2 {
+  padding: 2rem 1.5rem;
   text-align: center;
-  margin-bottom: 1rem;
-  color: var(--accent);
 }
 
-/* CAROUSEL LAYOUT */
+.projects-section h2 {
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.project-card {
+  background: var(--text-light);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+/* CAROUSEL */
 .carousel {
   position: relative;
-  max-width: 100%;
-  margin: auto;
   overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 0.7rem;
 }
+
 .carousel-slide {
   display: none;
 }
+
 .carousel-slide img {
   width: 100%;
-  border-radius: 6px;
+  height: auto;
+  border-radius: 8px;
 }
-.prev, .next {
+
+.carousel-btn {
   position: absolute;
   top: 45%;
-  padding: 0.5rem;
   background: var(--accent);
   color: var(--text-light);
-  font-weight: bold;
-  cursor: pointer;
   border: none;
+  padding: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
 }
-.prev { left: 5px; }
-.next { right: 5px; }
 
-/* COLLAPSIBLE DETAIL STYLE */
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* COLLAPSIBLE */
 .collapsible {
+  width: 100%;
   background: var(--accent);
   color: var(--text-light);
   padding: 0.8rem;
   border: none;
-  width: 100%;
-  text-align: left;
-  margin-top: 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
   cursor: pointer;
-  border-radius: 4px;
-}
-.content {
-  display: none;
-  padding: 0.8rem 1rem;
-  background: var(--body-bg);
-  border-radius: 4px;
+  margin-top: 0.5rem;
 }
 
-/* SKILL BADGES */
-.badge {
+.content {
+  display: none;
+  padding: 0.9rem;
+  background: var(--body-bg);
+  border-radius: 4px;
+  text-align: left;
+}
+
+.project-tools .badge {
   background: var(--header-bg);
   color: var(--text-light);
   padding: 0.3rem 0.7rem;
   border-radius: 4px;
-  margin-right: 0.5rem;
+  margin-right: 0.4rem;
   font-size: 0.9rem;
 }
 
-/* ABOUT SECTION */
+/* ========== ABOUT ========== */
 .about-section {
-  padding: 2rem;
-}
-.skills-list {
-  list-style: square inside;
+  padding: 2rem 1.5rem;
 }
 
-/* FOOTER */
+.skills-list {
+  list-style-type: square;
+  margin-top: 0.6rem;
+  padding-left: 1.3rem;
+}
+
+/* ========== FOOTER ========== */
 .footer-section {
-  text-align: center;
-  padding: 1rem;
   background: var(--text-main);
   color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
 }
 .footer-icons a {
-  margin: 0 0.5rem;
+  margin: 0 0.6rem;
+  font-size: 1.4rem;
   color: var(--text-light);
 }
 
-/* RESPONSIVE */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .intro-section {
     flex-direction: column;
     text-align: center;
   }
-  .intro-img img {
+  .intro-image img {
     max-width: 80%;
     margin-top: 1rem;
   }
