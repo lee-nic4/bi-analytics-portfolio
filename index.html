@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leanna Nicholas | BI Portfolio</title>
 
-<!-- FONT AWESOME ICONS -->
+<!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- CUSTOM STYLES -->
+<!-- Custom CSS -->
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,7 +26,7 @@
   </nav>
 
   <div class="header-icons">
-    <a href="https://linkedin.com/in/leanna-nicholas" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+     <a href="https://linkedin.com/in/leanna-nicholas" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     <a href="https://github.com/lee-nic4" target="_blank"><i class="fa-brands fa-github"></i></a>
     <a href="mailto:NICHL2@yahoo.com"><i class="fa-solid fa-envelope"></i></a>
   </div>
@@ -41,107 +41,85 @@
     <p class="tagline">Translating complex data into clear, executive-ready insights</p>
   </div>
   <div class="intro-image">
-    <img src="your-image.jpg" alt="Your Professional Photo">
+    <img src="your-image.jpg" alt="Professional Photo">
   </div>
 </section>
 
 <!-- ================= PROJECTS ================= -->
 <section id="projects" class="projects-section">
-  <h2>Data Dashboards & BI Projects</h2>
+  <h2 class="section-title">Data Dashboards &amp; BI Projects</h2>
 
-  <!-- ===== Project 1 ===== -->
+  <!-- Project 1 -->
   <div class="project-card">
     <h3 class="project-title">Project 1 Title</h3>
-
     <div class="carousel" data-index="0">
-      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard1" target="_blank"><img src="proj1-img1.jpg" alt=""></a></div>
-      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard1" target="_blank"><img src="proj1-img2.jpg" alt=""></a></div>
+      <div class="carousel-slide">
+        <a href="https://public.tableau.com/yourdashboard1" target="_blank"><img src="proj1-img1.jpg" alt=""></a>
+      </div>
+      <div class="carousel-slide">
+        <a href="https://public.tableau.com/yourdashboard1" target="_blank"><img src="proj1-img2.jpg" alt=""></a>
+      </div>
       <button class="carousel-btn prev" onclick="carouselMove(-1, this)">❮</button>
       <button class="carousel-btn next" onclick="carouselMove(1, this)">❯</button>
     </div>
-
     <button class="collapsible">Project Details</button>
     <div class="content">
-      <p><strong>Overview:</strong> Describe this project here.</p>
-      <p><strong>Stakeholder Needs:</strong> Explain needs.</p>
-      <p><strong>Approach:</strong> Tools & method.</p>
-      <p><strong>Impact:</strong> What the work delivered.</p>
+      <p><strong>Overview:</strong> Write details here...</p>
+      <p><strong>Stakeholder Needs:</strong> Write details here...</p>
+      <p><strong>Approach:</strong> Write details here...</p>
+      <p><strong>Impact:</strong> Write details here...</p>
       <div class="project-tools">
         <span class="badge">Tableau</span><span class="badge">Insights</span>
       </div>
     </div>
   </div>
 
-  <!-- ===== Project 2 ===== -->
-  <div class="project-card">
-    <h3 class="project-title">Project 2 Title</h3>
-
-    <div class="carousel" data-index="0">
-      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard2" target="_blank"><img src="proj2-img1.jpg" alt=""></a></div>
-      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard2" target="_blank"><img src="proj2-img2.jpg" alt=""></a></div>
-      <button class="carousel-btn prev" onclick="carouselMove(-1, this)">❮</button>
-      <button class="carousel-btn next" onclick="carouselMove(1, this)">❯</button>
-    </div>
-
-    <button class="collapsible">Project Details</button>
-    <div class="content">
-      <p>Write details here.</p>
-      <div class="project-tools">
-        <span class="badge">Tableau</span><span class="badge">SQL</span><span class="badge">Insights</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===== Project 3 ===== -->
-  <div class="project-card">
-    <h3 class="project-title">Project 3 Title</h3>
-
-    <div class="carousel" data-index="0">
-      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard3" target="_blank"><img src="proj3-img1.jpg" alt=""></a></div>
-      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard3" target="_blank"><img src="proj3-img2.jpg" alt=""></a></div>
-      <div class="carousel-slide"><a href="https://public.tableau.com/yourdashboard3" target="_blank"><img src="proj3-img3.jpg" alt=""></a></div>
-      <button class="carousel-btn prev" onclick="carouselMove(-1, this)">❮</button>
-      <button class="carousel-btn next" onclick="carouselMove(1, this)">❯</button>
-    </div>
-
-    <button class="collapsible">Project Details</button>
-    <div class="content">
-      <p>Write details here.</p>
-      <div class="project-tools">
-        <span class="badge">Tableau</span><span class="badge">SQL</span><span class="badge">Insights</span>
-      </div>
-    </div>
-  </div>
+  <!-- ... Repeat Project 2 & 3 similarly ... -->
 
 </section>
 
 <!-- ================= ABOUT ================= -->
 <section id="about" class="about-section">
-  <h2>About Me</h2>
+  <h2 class="section-title">About Me</h2>
   <p>Business Intelligence professional with 15+ years of experience in financial services, operations, and analytics. Recently completed the Google Business Intelligence Certificate, with hands-on experience building dashboards, KPI scorecards, and executive reporting. Known for structured thinking, process optimization, and translating complex data into clear insights for decision-makers. Actively pursuing BI/BA roles in globally distributed environments.</p>
 
-  <h3>Skills & Tools</h3>
-  <ul class="skills-list">
-    <li>Tableau</li>
-    <li>Power BI</li>
-    <li>SQL</li>
-    <li>Excel & Power Query</li>
-    <li>KPI Framework Design</li>
-    <li>Executive Reporting</li>
-  </ul>
+  <div class="skills-tools-container">
+    <!-- SKILLS COLUMN -->
+    <div class="skills-column">
+      <h3>Skills</h3>
+      <ul>
+        <li>Tableau</li>
+        <li>Power BI</li>
+        <li>SQL</li>
+        <li>Excel &amp; Power Query</li>
+        <li>KPI Framework Design</li>
+      </ul>
+    </div>
+    <!-- TOOLS COLUMN -->
+    <div class="tools-column">
+      <h3>Tools</h3>
+      <ul>
+        <li>Tableau Public</li>
+        <li>Power BI Desktop</li>
+        <li>Power Query / Power Pivot</li>
+        <li>Advanced Excel</li>
+        <li>Google Sheets</li>
+      </ul>
+    </div>
+  </div>
+
 </section>
 
 <!-- ================= FOOTER ================= -->
 <footer id="contact" class="footer-section">
   <p>© 2026 Leanna Nicholas — BI Portfolio</p>
   <div class="footer-icons">
-    <a href="https://linkedin.com/in/leanna-nicholas" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+   <a href="https://linkedin.com/in/leanna-nicholas" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     <a href="https://github.com/lee-nic4" target="_blank"><i class="fa-brands fa-github"></i></a>
     <a href="mailto:NICHL2@yahoo.com"><i class="fa-solid fa-envelope"></i></a>
   </div>
 </footer>
 
 <script src="scripts.js"></script>
-
 </body>
 </html>
